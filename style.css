@@ -1,22 +1,27 @@
 
 :root{
   --primary: #fff;
-  --bg-color: rgb(61, 5, 5);
+  --bg-color: #00357e;
   --bg-envelope-color: #fbce79;
-  --envelope-tab: #eb4364;
-  --envelope-cover: #eb395d;
+  --envelope-tab: #d60270;
+  --envelope-cover: #d60270;
   --shadow-color: rgba(0, 0, 0, 0.2);
   --txt-color: #444;
-  --heart-color: rgb(255, 255, 255);
+  --heart-color: #0038a8;
+
+
 }
 body{
+  aspect-ratio: 1920px 1080px;
+  background-image: url(pride\ month.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(I\ LOVE\ YOU.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: var(--bg-color);
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -134,4 +139,31 @@ body{
  color: white;
  font-family: 'American Typewriter';
  display: flex;
+}
+
+.navlist {
+  position: fixed;
+  size: 100%;
+  color: white;
+  display: flex;
+  bottom: 250px;
+  right: 100px;
+  font-size: 20px;
+  padding: 10px;
+  background: rgb(32, 3, 3);
+  border-radius: 10px;
+}
+
+a:-webkit-any-link {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+::marker {
+color: transparent;
+}
+
+.message {
+  align-content: center;
 }
